@@ -4,6 +4,7 @@ A full-stack monitoring system for tracking office device state (lights and fans
 
 ## Project Structure
 
+System Diagram and Circuit Diagram provided under Diagram Folder in the repo
 This is a pnpm monorepo containing three applications:
 - `apps/backend`: Node.js Express server with Socket.io and Supabase integration. It also runs the device state simulator.
 - `apps/dashboard`: React + Vite + Tailwind CSS dashboard providing real-time visual state and power consumption.
