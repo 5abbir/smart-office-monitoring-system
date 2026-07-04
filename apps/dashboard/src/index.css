@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 antialiased;
+  }
+}
+
+/*
+ * Custom animation utilities matching tailwindcss-animate API.
+ * Tailwind v4 does not include these by default.
+ * animate-in, fade-in, slide-in-from-right-4, duration-300
+ */
+@layer utilities {
+  /* --- animate-in base --- */
+  .animate-in {
+    animation-name: enter;
+    animation-duration: var(--tw-duration, 150ms);
+    animation-fill-mode: both;
+  }
+
+  /* --- fade-in --- */
+  .fade-in {
+    --tw-enter-opacity: 0;
+  }
+
+  /* --- slide-in-from-right-* --- */
+  .slide-in-from-right-4 {
+    --tw-enter-translate-x: 1rem; /* 4 * 0.25rem */
+  }
+
+  /* --- duration variants for animate-in --- */
+  .animate-in.duration-300,
+  .duration-300.animate-in {
+    animation-duration: 300ms;
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: var(--tw-enter-opacity, 1);
+    transform: translate(
+        var(--tw-enter-translate-x, 0),
+        var(--tw-enter-translate-y, 0)
+      )
+      scale(var(--tw-enter-scale, 1));
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}

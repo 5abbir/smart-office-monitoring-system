@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <rect x="50" y="150" width="120" height="80" rx="10" fill="#3b82f6" opacity="0.1" stroke="#3b82f6" stroke-width="2"/>
+  <text x="110" y="195" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b">ESP32 Simulator</text>
+
+  <rect x="240" y="150" width="120" height="80" rx="10" fill="#10b981" opacity="0.1" stroke="#10b981" stroke-width="2"/>
+  <text x="300" y="185" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b">Node.js</text>
+  <text x="300" y="205" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b">Backend API</text>
+
+  <rect x="430" y="50" width="120" height="80" rx="10" fill="#f59e0b" opacity="0.1" stroke="#f59e0b" stroke-width="2"/>
+  <text x="490" y="95" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b">React Dashboard</text>
+
+  <rect x="430" y="250" width="120" height="80" rx="10" fill="#8b5cf6" opacity="0.1" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="490" y="295" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b">Discord Bot</text>
+
+  <rect x="240" y="290" width="120" height="60" rx="10" fill="#64748b" opacity="0.1" stroke="#64748b" stroke-width="2"/>
+  <text x="300" y="325" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b">Supabase (PG)</text>
+
+  <!-- Arrows -->
+  <path d="M170 190 L230 190" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M360 180 L430 110" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M360 200 L430 270" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M300 230 L300 280" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+</svg>
